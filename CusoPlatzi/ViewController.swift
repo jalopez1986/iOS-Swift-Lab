@@ -12,10 +12,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailSwitch: UISwitch!
+    
+    private let emailKey = "email-key"
+    private let storage = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if let storedEmail = storage.string(forKey: emailKey) {
+            emailTextField.text = storedEmail
+            emailSwitch.isOn = true
+        } else {
+            emailSwitch.isOn = false
+        }
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
@@ -24,7 +34,13 @@ class ViewController: UIViewController {
         let password = passwordTextField.text
         
         if email == "jorge@gmail.com", password == "123" {
+            if (emailSwitch.isOn) {
+                storage.set(email,forKey: emailKey)
+            } else {
+                storage.removeObject(forKey: emailKey)
+            }
             performSegue(withIdentifier: "home_segue", sender: nil)
+            
         } else {
             print("Credenciales invalidas")
         }
