@@ -46,19 +46,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-J2-YwH">
-                                <rect key="frame" x="50" y="717" width="290" height="83"/>
+                                <rect key="frame" x="50" y="664" width="290" height="136"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-kS-muu">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="30"/>
-                                        <state key="normal" title="Registrese aqui">
+                                        <state key="normal" title="listas">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RHq-7K-6yi" kind="showDetail" id="zaV-Dt-Cu1"/>
+                                            <segue destination="fgd-fM-QDs" kind="presentation" modalPresentationStyle="fullScreen" id="D0w-WD-URh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-fc-dCb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bQ-FT-ZJb">
                                         <rect key="frame" x="0.0" y="53" width="290" height="30"/>
+                                        <state key="normal" title="Registrese aqui">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-fc-dCb">
+                                        <rect key="frame" x="0.0" y="106" width="290" height="30"/>
                                         <state key="normal" title="Ayuda">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -110,12 +116,20 @@
             </objects>
             <point key="canvasLocation" x="1672" y="39"/>
         </scene>
+        <!--Table-->
+        <scene sceneID="CPf-5I-XZN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Table" id="fgd-fM-QDs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Neg-KL-nlx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="189"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="S7L-jv-0zn">
             <objects>
                 <viewController id="RHq-7K-6yi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3u-Rb-B49">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-zK-f5M">
