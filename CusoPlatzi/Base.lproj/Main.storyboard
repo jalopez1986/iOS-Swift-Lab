@@ -33,12 +33,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDo-pj-UqZ">
-                                <rect key="frame" x="79" y="412" width="258" height="53"/>
+                                <rect key="frame" x="79" y="413" width="258" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.23284487692725581" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Iniciar Sesion">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtF-jH-ZC7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-kS-muu">
                                 <rect key="frame" x="141" y="616" width="134" height="45"/>
@@ -65,10 +68,23 @@
                         <color key="backgroundColor" red="0.2196078431372549" green="0.34509803921568627" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="5rI-P4-0wI"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Pus-eF-mZZ" id="DxF-ci-wI0"/>
+                        <outlet property="passwordTextField" destination="T34-zo-bkC" id="fak-vE-i2j"/>
+                        <segue destination="3qD-yy-e2j" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" id="uTo-4L-hrV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Sja-aE-vhv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="3qD-yy-e2j" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kS4-HJ-dC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="39"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S7L-jv-0zn">

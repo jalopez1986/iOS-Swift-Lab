@@ -15,6 +15,7 @@
 		A5EC99C426100A67006BD1A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EC99C226100A67006BD1A7 /* LaunchScreen.storyboard */; };
 		A5EC99CF26100A67006BD1A7 /* CusoPlatziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC99CE26100A67006BD1A7 /* CusoPlatziTests.swift */; };
 		A5EC99DA26100A67006BD1A7 /* CusoPlatziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC99D926100A67006BD1A7 /* CusoPlatziUITests.swift */; };
+		A5EC99EF2610145F006BD1A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EC99EE2610145F006BD1A7 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A5EC99D526100A67006BD1A7 /* CusoPlatziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CusoPlatziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EC99D926100A67006BD1A7 /* CusoPlatziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusoPlatziUITests.swift; sourceTree = "<group>"; };
 		A5EC99DB26100A67006BD1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EC99EE2610145F006BD1A7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		A5EC99B626100A64006BD1A7 /* CusoPlatzi */ = {
 			isa = PBXGroup;
 			children = (
+				A5EC99ED2610144E006BD1A7 /* Home */,
 				A5EC99B726100A64006BD1A7 /* AppDelegate.swift */,
 				A5EC99B926100A64006BD1A7 /* SceneDelegate.swift */,
 				A5EC99BB26100A64006BD1A7 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				A5EC99DB26100A67006BD1A7 /* Info.plist */,
 			);
 			path = CusoPlatziUITests;
+			sourceTree = "<group>";
+		};
+		A5EC99ED2610144E006BD1A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A5EC99EE2610145F006BD1A7 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 				A5EC99C426100A67006BD1A7 /* LaunchScreen.storyboard in Resources */,
 				A5EC99C126100A67006BD1A7 /* Assets.xcassets in Resources */,
 				A5EC99BF26100A64006BD1A7 /* Main.storyboard in Resources */,
+				A5EC99EF2610145F006BD1A7 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
