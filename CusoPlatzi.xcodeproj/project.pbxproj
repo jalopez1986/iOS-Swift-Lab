@@ -18,6 +18,8 @@
 		A5EC99EF2610145F006BD1A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EC99EE2610145F006BD1A7 /* Home.storyboard */; };
 		A5EC99F826102451006BD1A7 /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EC99F726102451006BD1A7 /* Table.storyboard */; };
 		A5EC99FD26102535006BD1A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC99FC26102535006BD1A7 /* TableViewController.swift */; };
+		A5EC9A0326102C57006BD1A7 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9A0126102C57006BD1A7 /* TweetTableViewCell.swift */; };
+		A5EC9A0426102C57006BD1A7 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EC9A0226102C57006BD1A7 /* TweetTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A5EC99EE2610145F006BD1A7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A5EC99F726102451006BD1A7 /* Table.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Table.storyboard; path = ../../../../../../../Table.storyboard; sourceTree = "<group>"; };
 		A5EC99FC26102535006BD1A7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A5EC9A0126102C57006BD1A7 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		A5EC9A0226102C57006BD1A7 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				A5EC99F726102451006BD1A7 /* Table.storyboard */,
 				A5EC99FC26102535006BD1A7 /* TableViewController.swift */,
+				A5EC9A0126102C57006BD1A7 /* TweetTableViewCell.swift */,
+				A5EC9A0226102C57006BD1A7 /* TweetTableViewCell.xib */,
 			);
 			path = Tablas;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EC99C426100A67006BD1A7 /* LaunchScreen.storyboard in Resources */,
+				A5EC9A0426102C57006BD1A7 /* TweetTableViewCell.xib in Resources */,
 				A5EC99C126100A67006BD1A7 /* Assets.xcassets in Resources */,
 				A5EC99F826102451006BD1A7 /* Table.storyboard in Resources */,
 				A5EC99BF26100A64006BD1A7 /* Main.storyboard in Resources */,
@@ -288,6 +295,7 @@
 				A5EC99BC26100A64006BD1A7 /* ViewController.swift in Sources */,
 				A5EC99B826100A64006BD1A7 /* AppDelegate.swift in Sources */,
 				A5EC99BA26100A64006BD1A7 /* SceneDelegate.swift in Sources */,
+				A5EC9A0326102C57006BD1A7 /* TweetTableViewCell.swift in Sources */,
 				A5EC99FD26102535006BD1A7 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
