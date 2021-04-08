@@ -79,7 +79,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-fc-dCb">
                                         <rect key="frame" x="0.0" y="106" width="290" height="30"/>
-                                        <state key="normal" title="Ayuda">
+                                        <state key="normal" title="Servicios">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -159,19 +159,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptK-1t-yCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="754"/>
+            <point key="canvasLocation" x="803" y="827"/>
         </scene>
-        <!--Ayuda-->
+        <!--Servicios-->
         <scene sceneID="OE2-xc-dOt">
             <objects>
-                <viewController id="LH0-Ay-GuQ" sceneMemberID="viewController">
+                <viewController id="LH0-Ay-GuQ" customClass="ServiciosViewController" customModule="CusoPlatzi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PTc-BF-vFO">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqF-Gf-AV3">
+                                <rect key="frame" x="20" y="118" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="T8x-fo-TIa">
+                                <rect key="frame" x="176.66666666666666" y="169" width="37" height="37"/>
+                                <color key="color" systemColor="systemGreenColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noj-4V-L5p">
+                                <rect key="frame" x="20" y="236" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1VK-vs-F43"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qqF-Gf-AV3" firstAttribute="leading" secondItem="1VK-vs-F43" secondAttribute="leading" constant="20" id="KUY-Hd-E3w"/>
+                            <constraint firstItem="noj-4V-L5p" firstAttribute="top" secondItem="T8x-fo-TIa" secondAttribute="bottom" constant="30" id="Tq6-bj-hYg"/>
+                            <constraint firstItem="qqF-Gf-AV3" firstAttribute="top" secondItem="1VK-vs-F43" secondAttribute="top" constant="30" id="UFM-mS-xPp"/>
+                            <constraint firstItem="T8x-fo-TIa" firstAttribute="centerX" secondItem="PTc-BF-vFO" secondAttribute="centerX" id="bao-Hy-H3A"/>
+                            <constraint firstItem="1VK-vs-F43" firstAttribute="trailing" secondItem="qqF-Gf-AV3" secondAttribute="trailing" constant="20" id="bvi-fL-jf7"/>
+                            <constraint firstItem="1VK-vs-F43" firstAttribute="trailing" secondItem="noj-4V-L5p" secondAttribute="trailing" constant="20" id="gFP-PC-frq"/>
+                            <constraint firstItem="T8x-fo-TIa" firstAttribute="top" secondItem="qqF-Gf-AV3" secondAttribute="bottom" constant="30" id="hac-fg-yzN"/>
+                            <constraint firstItem="noj-4V-L5p" firstAttribute="leading" secondItem="1VK-vs-F43" secondAttribute="leading" constant="20" id="wZ8-3D-mvc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Ayuda" id="Tu6-Yi-wUa"/>
+                    <navigationItem key="navigationItem" title="Servicios" id="Tu6-Yi-wUa"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="T8x-fo-TIa" id="lbb-Mk-s5O"/>
+                        <outlet property="nameLabel" destination="qqF-Gf-AV3" id="aV3-h9-Soy"/>
+                        <outlet property="statusLabel" destination="noj-4V-L5p" id="NSb-fP-FeC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiV-o0-zYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +231,9 @@
     </scenes>
     <resources>
         <image name="logo" width="400" height="230"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
