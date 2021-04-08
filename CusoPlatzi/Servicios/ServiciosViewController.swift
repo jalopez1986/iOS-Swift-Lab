@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 
 //Convirtiendo JSON a modelo
@@ -48,20 +49,19 @@ class ServiciosViewController: UIViewController {
         
         activityIndicator.startAnimating()
         
-        URLSession.shared.dataTask(with: endpoint) { (data: Data?, _, error: Error?) in
-            
+        AF.request(endpoint, method: .get, parameters: nil).responseData { (response: AFDataResponse<Data>) in
             DispatchQueue.main.async {
                 self.activityIndicator.stopAnimating()
             }
             
             
-            if (error != nil) {
+            if (response.error != nil) {
                 print("hubo un error")
                 return
             }
             
             guard
-                let dataFromService = data,
+                let dataFromService = response.data,
                 let model: Human = try? JSONDecoder().decode(Human.self, from: dataFromService) else {
                 return
             }
@@ -71,8 +71,8 @@ class ServiciosViewController: UIViewController {
                 self.nameLabel.text = model.user
                 self.statusLabel.text = model.isHappy ? "Es feliz!" : "Es triste!"
             }
-
-        }.resume()
+            
+        }
     }
     
 
