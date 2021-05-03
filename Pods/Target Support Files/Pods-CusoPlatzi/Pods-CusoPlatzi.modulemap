@@ -1,0 +1,6 @@
+framework module Pods_CusoPlatzi {
+  umbrella header "Pods-CusoPlatzi-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-CusoPlatzi-CusoPlatziUITests/Pods-CusoPlatzi-CusoPlatziUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
